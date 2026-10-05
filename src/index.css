@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0c0d10;
+    color: #f0f3fa;
+    overflow-x: hidden;
+  }
+}
+
+.font-mono-data {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom candlestick chart grid pattern */
+.chart-grid {
+  background-image: 
+    linear-gradient(to right, rgba(42, 46, 57, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 46, 57, 0.45) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.chart-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(42, 46, 57, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 46, 57, 0.25) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Hide scrollbars for clean carousel strips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom sleek scrollbar for watchlist and tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #131722;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #434651;
+}

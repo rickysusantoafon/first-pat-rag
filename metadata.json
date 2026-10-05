@@ -1,0 +1,7 @@
+{
+  "name": "TradingView — Where the world does markets",
+  "description": "Professional financial charting platform and social network for traders and investors. Live market quotes, Supercharts terminal, community ideas, and broker integrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
